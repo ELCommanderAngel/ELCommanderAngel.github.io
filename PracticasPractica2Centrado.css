@@ -15,12 +15,53 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 75vh;
-    background: linear-gradient(coral, coral);
+    background: linear-gradient(#b7328d, #b7328d);
 }
 
 *{
-    maring: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+.container {
+    border: solid 1px rgba(255,255,255 0.2)
+}
+
+table {
+    color: #fff;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #b7328d(243, 140, 210, 0.4);
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    }
+    
+    
+
+    td {
+          padding: 15px;
+          border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+
+          }
+        
+
+
+
+  tbody tr {
+    cursor: pointer;
+  }
+
+
+  tbody tr:hover {
+    background: rgba(243, 103 199, 0.4);
+  }
