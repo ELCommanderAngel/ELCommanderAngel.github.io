@@ -9,3 +9,18 @@ th,
 td{
     border: 1px solid black;
 }
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background: linear-gradient(coral, coral);
+}
+
+*{
+    maring: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
