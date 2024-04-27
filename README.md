@@ -2,5 +2,5 @@
 
 [Amazon](https://link-url-here.org)
 
-https://github.com/ELCommanderAngel/ELCommanderAngel.github.io/blob/main/proyecto/Captura%20de%20pantalla%20(1).png
+![Imagen Amazon]https://github.com/ELCommanderAngel/ELCommanderAngel.github.io/blob/main/proyecto/Captura%20de%20pantalla%20(1).png)
 
