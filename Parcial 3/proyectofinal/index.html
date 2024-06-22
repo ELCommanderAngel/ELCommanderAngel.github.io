@@ -13,7 +13,7 @@
         <div class="col">
             <h3 class="card">SELECT * FROM alumno;</h3>
             <p>Consulta #1 Obtener el listado de todos los alumnos de la Facultad.</p>
-            <img src="Nueva carpeta/Captura de pantalla (1).png" alt="" style="height: 500px; width: 900px;">
+            <img src="ha.png" alt="" style="height: 500px; width: 900px;">
         </div>
     </div>
 </div>
@@ -23,7 +23,45 @@
                 <div class="col">
                     <h3 class="card">SELECT curso.nommbredescriptivo, asginatura.nombre FROM curso INNER JOIN assignatura ON curso.idCurso=asignatura.curso;</h3>
                     <p>Mostrar los nombres de los cursos con sus respetivas asignaturas.</p>
-                    <img src="Nueva carpeta/Captura de pantalla (3).png" alt="" style="height: 500px; width: 900px;">
+                    <img src="yo.png" alt="" style="height: 500px; width: 900px;">
+
+                    <body style="background-color: blue;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="card">SELECT alumno.nombre, alumno.apellido1 FROM alumno WHERE beca = 'si'</h3>
+                                    <p>OBTENER LISTADO ( NOMBRE Y APELLIDO) DE ALUMNOS QUE TENGAN BECA.</p>
+                                    <img src="Pollo.png" alt="" style="height: 500px; width: 900px;">
+
+                                    <body style="background-color: blue;">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3 class="card">SELECT profesor.nombre,profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h3>
+                                                    <p>OBTENER LISTADO DE PROFESORES TODOS LOS CAMPOS QUE ESTAN INSTRICTOS A LAS ASIGNATURAS DE PROGRAMACION</p>
+                                                    <img src="AMBATU.png" alt="" style="height: 500px; width: 900px;">
+
+                                                    
+                                    <body style="background-color: blue;">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3 class="card">SELECT alumno.*, asignatura.nombre FROM alumno JOIN matricula ON alumno.idAlumno = matricula.idAlumno JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.idAsignatura LIKE 'AS009'</h3>
+                                                    <p>OBTENER LISTADO DE ALUMNOS TODOS LOS CAMPOS QUE ESTAN INSTRICTOS A LAS ASIGNATURAS DE PROGRAMACION</p>
+                                                    <img src="IUIU.png" alt="" style="height: 500px; width: 900px;">
+
+
+                                                                    
+                                    <body style="background-color: blue;">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3 class="card">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON asignatura.idAsignatura = impartir.idAsignatura</h3>
+                                                    <p>OBTENER LISTADO E PROFESORES Y ASIGNATURAS DE IMPARTEN</p>
+                                                    <img src="nose.png" alt="" style="height: 500px; width: 900px;">
+                                
+                
+                    
 
     
 
