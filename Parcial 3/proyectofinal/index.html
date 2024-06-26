@@ -59,6 +59,62 @@
                                                     <h3 class="card">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON asignatura.idAsignatura = impartir.idAsignatura</h3>
                                                     <p>OBTENER LISTADO E PROFESORES Y ASIGNATURAS DE IMPARTEN</p>
                                                     <img src="nose.png" alt="" style="height: 500px; width: 900px;">
+
+
+                                                    <div class="card">
+                                                        <div class="cent">
+                                                          <h1>7- SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;
+                                                          </h1>
+                                                        </div>
+                                                        <div class="card-body">
+                                                          <p class="card-text">Mostrar la asignatura que tiene más alumnos en total</p>
+                                                          <img src="Proyecto 7.png" class="card-img-top" alt="...">
+                                                        </div>
+                                                      </div>
+                                                    
+                                                      <div class="card">
+                                                        <div class="cent">
+                                                          <h1>8- SELECT alumno.nombre FROM alumno INNER JOIN impartir INNER JOIN matricula on impartir.idAsignatura=asignatura.idAsignatura and impartir.idProfesor="PR0048";
+                                                          </h1>
+                                                        </div>
+                                                        <div class="card-body">
+                                                          <p class="card-text">Mostrar a los alumnos que les da clase el profesor jose manuel</p>
+                                                          <img src="Proyecto 8.png" class="card-img-top" alt="...">
+                                                        </div>
+                                                      </div>
+                                                    
+                                                      <div class="card">
+                                                        <div class="cent">
+                                                          <h1>9- FROM curso
+                                                            INNER JOIN profesor
+                                                            INNER JOIN asignatura
+                                                            ON curso.idCurso=asignatura.curso
+                                                            INNER JOIN impartir
+                                                            ON asignatura.idAsignatura=impartir.idAsignatura;
+                                                          </h1>
+                                                        </div>
+                                                        <div class="card-body">
+                                                          <p class="card-text">Mostrar los cursos, con sus asignaturas y que maestros las imparten</p>
+                                                          <img src="Proyecto9.png" class="card-img-top" alt="...">
+                                                        </div>
+                                                      </div>
+                                                    
+                                                      <div class="card">
+                                                        <div class="cent">
+                                                          <h1>10- SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo
+                                                            FROM alumno
+                                                            INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno
+                                                            INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura
+                                                            INNER JOIN impartir ON impartir.idAsignatura=asignatura.idasignatura
+                                                            INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor
+                                                            INNER JOIN curso ON curso.idCurso=asignatura.curso;
+                                                          </h1>
+                                                        </div>
+                                                        <div class="card-body">
+                                                          <p class="card-text">Mostrar todos los alumonos con asignatura, profesor y curso</p>
+                                                          <img src="Proyecto 10.png" class="card-img-top" alt="...">
+                                                        </div>
+                                                      </div>
                                 
                 
                     
