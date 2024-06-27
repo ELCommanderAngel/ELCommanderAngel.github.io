@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 75vh;
-    background: linear-gradient(#b7328d, #b7328d);
+    background: linear-gradient(rgb(48, 1, 70), rgb(48, 1, 70));
 }
 
 *{
@@ -36,7 +36,7 @@ table {
 }
 
 thead {
-    background: #b7328d(243, 140, 210, 0.4);
+    background: #ffffff(243, 140, 210, 0.4);
 }
 
 th {
